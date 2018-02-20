@@ -21,6 +21,15 @@ e.g.
 
     python name_extraction.py --directory='data/' >results.txt
 
+
+## Methodology
+1- Iterate through folder and grab documents
+2- find sentences and tokenized each sentence
+3- find entities inside sentences
+4- if entity label is "person" check check for role of the person (it shoudld be PROPN)
+5- chunking the sentence where entity label is selected and find appos or component of the name
+6-
+
 ## Evaluation and issues
 In general finding the role has less accuracy comparing to finding a name
 The role is extracted by chunking the part of text where the name is extracted
@@ -35,8 +44,8 @@ e.g., words between semicolon after name is a role!
 
 Also it considered couple of brand names like “youtube” or “Android” as a name which can be solve by assigning a predefined dictionary to remove them.
 
-By analyzing 7 text files (+8000 words) the model extracted 21 names, one of them are completely wrong (e.g. “Don t”) 3 names had added prefix, and 2 roles are not selected
-### Model accuracy ~ 67%
+By analyzing 7 text files (+8000 words) the model extracted 21 names, one of them are completely wrong (e.g. “Don t”) 1 names had added prefix, and 2 roles are not selected
+### Model accuracy ~ 79%
 
 
 

@@ -42,6 +42,8 @@ def extract_name(doc, tail):
                     result = ' '.join(result)
 
                     ## remove any date from results if result is not empty
+                    ## TODO:
+                    ## find other aspects that does not make sense and remove them
                     matches = datefinder.find_dates(result, source=True)
                     match = [w for w in matches]
                     if len(result) != 0 and len(match) != 0:
