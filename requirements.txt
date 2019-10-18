@@ -22,7 +22,7 @@ preshed==1.0.0
 python-dateutil==2.6.1
 pytz==2018.3
 regex==2016.1.10
-requests==2.18.4
+requests==2.20.0
 six==1.11.0
 spacy==2.0.8
 termcolor==1.1.0
